@@ -1,0 +1,211 @@
+.panel-text{
+  margin-top: 30px;
+}
+@media only screen and (max-width: 1023px) {
+    .panel__list {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  
+  .panel-item {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 60px 60px 35px;
+    -webkit-box-shadow: 0 10px 20px rgba(19, 57, 54, 0.5);
+    box-shadow: 0 10px 20px rgba(19, 57, 54, 0.5);
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .panel-item {
+      padding: 30px 20px 10px;
+      margin-bottom: 10px;
+    }
+  
+    .panel-item--centered {
+      text-align: center;
+    }
+  }
+  
+  .panel-item__title {
+    color: #133936;
+    max-width: 550px;
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .panel-item__title {
+      max-width: none;
+    }
+  }
+  
+  .panel-item__img {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+  
+    &.is-mobile {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .panel-item__img {
+      &.is-desktop {
+        display: none;
+      }
+  
+      &.is-mobile {
+        display: block;
+      }
+    }
+  }
+
+
+  .panel-item {
+    border-radius: 3px;
+  }
+  
+  h4.panel-item__subtitle {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .panel-item__hover {
+    padding: 15px 30px 25px;
+    margin: -15px -30px 10px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  
+    &:hover {
+      background: #f4f4f4;
+    }
+  }
+
+
+  .panel-item__links {
+    width: 65%;
+  }
+
+  .panel__list.panels_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .panels_flex {
+    .panel-item {
+      width: 32%;
+      margin: 0 0 20px;
+      padding: 20px;
+      text-align: center;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+  
+    .panel__item.panel-item:hover {
+      cursor: pointer;
+      box-shadow: 0 25px 35px rgba(0, 128, 0, 0.5);
+    }
+  
+    .panel-item img {
+      max-width: 100%;
+      margin-bottom: 30px;
+      height: 260px;
+    }
+  }
+  
+  .panel__item_subtitle {
+    /* height: 38px; */
+    overflow: hidden;
+    position: relative;
+  
+    /* margin-right: -1em; */
+    padding-right: 1em;
+    text-align: justify;
+  
+    &:before {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      margin-top: 0.2em;
+      background: white;
+    }
+  }
+
+
+  .panel-item__bigtext {
+    font-size: 25px;
+    color: #133936;
+    line-height: 28px;
+  }
+  
+  .panel-item-direction {
+    .panel-item__title {
+      font-weight: bold;
+    }
+  
+    .panel-item__text {
+      color: #000;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .panel-item__title {
+      font: 30px/36px dinpromedium,sans-serif;
+      margin: 0 0 25px;
+      color: #133936;
+      max-width: unset;
+    }
+  
+    .for-input span {
+      color: #000;
+      font-size: 20px;
+      line-height: normal;
+    }
+  
+    input {
+      &[type=email], &[type=password], &[type=search], &[type=tel], &[type=text] {
+        font-size: 20px;
+        border-color: #3c5f55;
+        border-width: 2px;
+        line-height: normal;
+      }
+    }
+  
+    textarea {
+      font-size: 20px;
+      border-color: #3c5f55;
+      border-width: 2px;
+      line-height: normal;
+    }
+  
+    input {
+      &[type=email], &[type=password], &[type=search], &[type=tel], &[type=text] {
+        height: 60px;
+      }
+    }
+  
+    .feedback__form {
+      margin-bottom: 30px;
+    }
+  }
