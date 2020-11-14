@@ -38,6 +38,8 @@ var
     path.targetJs = path.target+'/js';
     path.targetCss = path.target+'/css';
     path.targetImg = path.target+'/images';
+    path.srcFonts = path.src +'/fonts';
+    path.targetFonts = path.target +'/fonts';
 
 gulp.task('html', function() {
         return gulp.src( path.src +'/*.html' )
@@ -104,7 +106,11 @@ gulp.task('clean:img', function (done) {
     del( path.targetImg );
     done();
 });
-gulp.task('clean', gulp.parallel('clean:html', 'clean:css', 'clean:js', 'clean:img'));
+gulp.task('clean:font', function (done) {
+    del( path.targetFonts );
+    done();
+});
+gulp.task('clean', gulp.parallel('clean:html', 'clean:css', 'clean:js', 'clean:img', 'clean:font'));
 
 
 
@@ -113,7 +119,14 @@ gulp.task('copy:img', function (done) {
       .pipe(gulp.dest( path.targetImg ));
   done();
 });
-gulp.task('copy', gulp.parallel('copy:img'));
+
+gulp.task('copy:font', function (done) {
+  gulp.src( path.srcFonts +'/**/*.*')
+      .pipe(gulp.dest( path.targetFonts ));
+  done();
+});
+
+gulp.task('copy', gulp.parallel('copy:img', 'copy:font'));
 
 
 

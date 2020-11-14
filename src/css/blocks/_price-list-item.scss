@@ -1,0 +1,35 @@
+
+.price-list-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px $grey;
+    padding: 20px 0 18px;
+    &_last{
+        border-bottom: none;
+    }
+
+    &__title {
+        margin: 0;
+    }
+    &__desc {
+        margin-top: 10px;
+    }
+    &__values {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    
+    &-value {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 20px;
+        &__title {
+            color: #737373;
+        }
+        &__price {
+            color: $green_3;
+        }
+      }
+  }

@@ -1,0 +1,11 @@
+.ui-btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 2em 0.35em;
+    
+    &_green{
+        background-color: $green_2;
+        color: white;
+    }
+
+}
