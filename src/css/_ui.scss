@@ -1,11 +1,30 @@
 .ui-btn{
     text-decoration: none;
     display: inline-block;
-    padding: 0.5em 2em 0.35em;
+    padding: 0.6em 1em 0.4em;
+    border: none;
     
     &_green{
         background-color: $green_2;
         color: white;
     }
 
+    &_subm{
+        color: black;
+        background-color:$green_2;
+        border-bottom: solid 4px $green_3;
+        padding: 0.7em 3.5em;
+    }
+}
+
+.ui-input-row{
+    margin-bottom: 13px;
+
+    &__desc{
+        font-size: 0.7em;
+        line-height: 1em;
+        a{
+            color: #0079ff;
+        }
+    }
 }

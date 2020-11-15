@@ -48,7 +48,7 @@ gulp.task('html', function() {
             basepath: '@file'
           }))
           .pipe(gulp.dest( path.target ));
-    });
+});
 
 
 gulp.task('scssCompile', function (done) {

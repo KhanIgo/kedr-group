@@ -1,34 +1,55 @@
 .z-f-din{
     font-family: 'PF DinDisplay Pro',  'Times New Roman', Times, serif;
-
+    letter-spacing: 0.02em;
 
     h1, h2, h3, h4, h5, h6{
         font-family: inherit;
+        text-transform: none;
     }
 }
 
 .z-h{
     font-weight: 400;
-    margin-top: 7px;
+    margin-top: 0px;
+    margin-bottom: 0;
     line-height: 1.2em;
 
-    &_4{
+    &_3{
         font-size: 1.9em;
     }
+    &_4{
+        font-size: 1.5em;
+    }
     &_5{
+        font-size: 1.28em;
+    }
+    &_6{
         font-size: 1.25em;
     }
 
     &_g{
         color: $green;
     }
-}
-
-.z{
-    p{
-        margin-bottom: 20px;
-        &:last-of-type{
-            margin-bottom: 0;
-        }
+    &_page-title{
+        font-size: 1.9em;
+        margin-bottom: 18px;
     }
 }
+
+
+p{
+    margin-bottom: 20px;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+
+.c-green{
+    color: $green;
+}
+
+.c-white{
+    color: white;
+}
+
