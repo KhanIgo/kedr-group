@@ -1,0 +1,66 @@
+.page-security{
+  &-overlay{
+    background: url(/images/fis-security/security-bg.jpg) no-repeat center top/cover;
+  }
+  &__panel-item{
+    padding-bottom: 50px;
+    &_hero{
+      padding-bottom: 30px;
+    }
+    &_complex{
+      padding-bottom: 55px;
+    }
+    &_advantages{
+      //padding-bottom: 50px;
+    }
+    &_prepare{
+      padding-bottom: 45px;
+    }
+    &_orderly{
+      padding-bottom: 60px;
+    }
+    &_price{
+      padding-bottom: 60px;
+    }
+    &_lic{
+      padding-bottom: 25px;
+    }
+  }
+
+  &__title{
+    &_1{
+      margin-top: 32px;
+    }
+
+    &_orderly{
+      margin-top: 30px;
+    }
+  }
+
+  &__imt-items{
+    margin-top: 10px;
+
+    &_2{
+      margin-top: 30px;
+      .imt{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__advantage-items{
+    margin-top: 20px;
+  }
+
+  &__prepare-items{
+    margin-top: 30px;
+  }
+
+  &__lic-items{
+    margin-top: 30px;
+  }
+
+  &-panel-price-desc{
+    margin-top: 5px;
+  }
+}
