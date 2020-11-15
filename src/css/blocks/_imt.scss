@@ -1,0 +1,27 @@
+.imt{
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 5px 45px;
+  max-width: 270px;
+  text-align: center;
+  &__icon-wrpr{
+    width: 100%;
+  }
+  &__icon{}
+  &__text{
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+.imt-items{
+  //width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: calc( 100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+}

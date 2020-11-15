@@ -1,0 +1,29 @@
+.advantage-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.advantage{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 260px;
+  margin: 10px;
+  background-color: $green;
+  color: white;
+  padding: 22px 10px 10px;
+  border-radius: 3px;
+  font-weight: 100;
+
+
+  &__num{
+    margin-bottom: 23px;
+    font-size: 2.2em;
+  }
+
+  &__text{
+    margin-top: auto;
+  }
+}

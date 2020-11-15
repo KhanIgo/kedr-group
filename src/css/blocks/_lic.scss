@@ -1,0 +1,9 @@
+.lic{
+  margin-bottom: 25px;
+  &__img{}
+}
+.lic-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

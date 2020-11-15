@@ -1,0 +1,28 @@
+.prep{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+
+  &__num{
+    color: $green_2;
+    font-size: 1.125em;
+    margin-bottom: 5px;
+  }
+
+  &__text{
+    color: white;
+    background-color: $green;
+    box-shadow: 0px 10px 20px rgba(111, 207, 151, 0.5);
+    border-radius: 3px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+}
+
+.prep-list{
+  display: flex;
+  flex-direction: column;
+}
